@@ -11,7 +11,7 @@ using std::vector;
 class TopTenList
 {
   private:
-
+    vector<Hyperlink> links;
   public:
     void set_at(int index, Hyperlink link);
     Hyperlink get(int index);
