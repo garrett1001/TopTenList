@@ -11,10 +11,14 @@ using std::vector;
 class TopTenList
 {
   private:
-    vector<Hyperlink> links;
+    vector<Hyperlink> _links;
   public:
+    TopTenList();
     void set_at(int index, Hyperlink link);
     Hyperlink get(int index);
+    //Required for IDirectionable interface:
+    void display_forward();
+    void display_backward();
 };
 
 #endif
